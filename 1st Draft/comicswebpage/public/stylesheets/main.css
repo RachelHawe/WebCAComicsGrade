@@ -1,0 +1,87 @@
+body.events
+{
+	background-image: url("comicbookbg.jpg");
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+body.NewReleases
+{
+}
+
+.nav
+{
+	padding-left:3em;
+	padding-right:3em;
+	
+	
+}
+h1
+{
+	font-family:Impact;
+	font-style: italic;
+	text-align:center;
+	color:white;
+}
+h2
+{
+	text-align:center;
+}
+h3
+{
+	text-align:center;
+}
+h4
+{
+	text-align:center;
+}
+img.center
+{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+table, th, td {
+    
+	background-color:#2D2B2B;
+	padding-left:5em;
+	padding-top:.5em;
+	padding-right:5em;
+	margin-align:center;
+	height-align:center;
+	width:72em;
+}
+
+tr.odd td
+{
+	background-color:#D6D6D6;;
+}
+
+.panel-collapse 
+{
+	margin-left:8em;	
+}
+   
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      
+      footer {
+        background-color: grey;
+        padding: 25px;
+      }
+      
+    .carousel-inner img {
+        width: 100%; 
+        margin: auto;
+        min-height:200px;
+    }
+  
+    
+    @@media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }

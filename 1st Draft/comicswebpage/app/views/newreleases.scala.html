@@ -1,0 +1,715 @@
+@()
+
+  
+    <!DOCTYPE html>
+    <html lang="en">
+
+
+
+<html>
+        <link href="@routes.Assets.versioned("stylesheets/main.css")" rel="stylesheet" type="text/css" />
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      body.events
+  {
+    background-image: url('@routes.Assets.versioned("images/comicbookbg.jpg")');
+    background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: center; 
+  }
+  body.NewReleases
+  {
+  }
+  
+  .nav
+  {
+    padding-left:3em;
+    padding-right:3em;
+    
+    
+  }
+  h1
+  {
+    font-family:Impact;
+    font-style: italic;
+    text-align:center;
+    color:white;
+  }
+  h2
+  {
+    text-align:center;
+  }
+  h3
+  {
+    text-align:center;
+  }
+  h4
+  {
+    text-align:center;
+  }
+  img.center
+  {
+    display: block;
+      margin-left: auto;
+    margin-right: auto;
+  }
+  table, th, td {
+      
+    background-color:#2D2B2B;
+    padding-left:5em;
+    padding-top:.5em;
+    padding-right:5em;
+    margin-align:center;
+    height-align:center;
+    width:72em;
+  }
+  
+  tr.odd td
+  {
+    background-color:#D6D6D6;;
+  }
+  
+  .panel-collapse 
+  {
+    margin-left:8em;	
+  }
+     
+      .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+        
+        
+        footer {
+          background-color: grey;
+          padding: 25px;
+        }
+        
+      .carousel-inner img {
+          width: 100%; 
+          margin: auto;
+          min-height:200px;
+      }
+    
+      
+      @@media (max-width: 600px) {
+        .carousel-caption {
+          display: none; 
+        }
+      }
+      </style>
+  
+  </head>
+  <body class="events">
+</head>
+<body class="events">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand">Comic Book Page</a>
+              </div>
+              <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+                <li><a href="/aboutus">About</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Timeline
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DC</a></li>
+                    <li><a href="#">Marvel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/events">Events</a></li>
+                <li class ="active"><a href="/newreleases">New Releases</a></li>
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+      <li><a href="/sgn"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/lgn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+          
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
+      </nav>
+
+      <h2> November 2017 </h2>
+      <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                          Releases For 17th November 2017 
+                      </a>
+                  </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in" ><div id="collapse1" class="panel-collapse collapse in" >
+                  <div class="panel-body" >
+                  <br>
+                  
+                      <div class="container-fluid bg-3 text-center">  
+                          <div class="row" >
+                              <div class="col-sm-2">
+                                  <p>Apocalypse Girl</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img1.jpg")" class="img-responsive" style="width:100%" alt="Image" >
+                              </div>
+                          
+                              <div class="col-sm-2"> 
+                                  <p>Betty and Veronica Vixens</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Demon Hell Is Earth</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                                  
+                              <div class="col-sm-2">
+                                  <p>Doctor Radar</p>
+                                    <img src="@routes.Assets.versioned("images/rel.week3img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Doomsday Clock</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img5.gif")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+
+                      <div class="container-fluid bg-3 text-center">    
+                          <div class="row">
+                              <div class="col-sm-2"> 
+                                  <p>Doppelganger</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Giant Days 2017 Special</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+
+                              <div class="col-sm-2">
+                                  <p>Imaginary Fiends</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img8.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                   <p>James Bond Solstice</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Maxwell's Demons</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img10.jpeg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+                      <br>
+                      
+                      <div class="container-fluid bg-3 text-center">    
+                          <div class="row">
+                              <div class="col-sm-2"> 
+                                  <p>Tomb Raider Survivor's Crusade</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Villain</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Void Trip</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img14.png")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+                      <br>
+                                  
+                  </div>
+              </div>
+                </div>
+                
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                      Release For 10th November 2017</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Batman Who Laughs</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img1.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                  <div class="col-sm-2"> 
+                    <p>Brilliant Trash</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Dark Fang</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Evolution</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Fences</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img5.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br><br>
+
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+
+                  <div class="col-sm-2"> 
+                    <p>Jenny Finn</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Minky Woodcock Girl Who Handcuffed Houdini</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Ninja-k</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img8.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                   <div class="col-sm-2">
+                    <p>Not Brand Echh</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Priceless Raven The Pirate Princess Year Two Love and Revenge</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img10.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  </div>
+              </div><br><br>
+
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">  
+                  <div class="col-sm-2"> 
+                    <p>Rasputin The Voice of the Dragon</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Rock & Roll Biographies Opeth-k</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>The Willows</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img13.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>WWE Survivors Series 2017 Special</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img14.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br><br>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                      Releases For 3rd  November 2017</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                    <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>1985 Black Hole Repo</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img1.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Batman Lost</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Coyetes</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Deuce of Hearts</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Fallen Suns</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img5.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+
+              <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Harbinger Renegade</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Harcourt Legacy</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Iron Maiden Legacy of the Beast</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img8.jpeg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Kong On The Planet of the Apes</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Master of Kung Fu</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img10.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+
+              <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Moon Knight</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Port of Earth</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Rivers of London Cry Fox</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img13.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Skylanders Spyro And Friends </p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img14.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Wonderful World Of Tank Girl </p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img15.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+                    
+                    
+                    </div>
+                  </div>
+          </div>
+      </div>
+      
+      
+      
+      <h2>October 2017 </h2>
+      
+      <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                          Releases For December 2017 
+                      </a>
+                  </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse" >
+                  <div class="panel-body" >
+                  <br>
+                  
+                      <div class="container-fluid bg-3 text-center">  
+                          <div class="row" >
+                              <div class="col-sm-2">
+                                  <p>Apocalypse Girl</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img1.jpg")" class="img-responsive" style="width:100%" alt="Image" >
+                              </div>
+                          
+                              <div class="col-sm-2"> 
+                                  <p>Betty and Veronica Vixens</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Demon Hell Is Earth</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                                  
+                              <div class="col-sm-2">
+                                  <p>Doctor Radar</p>
+                                    <img src="@routes.Assets.versioned("images/rel.week3img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Doomsday Clock</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img5.gif")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+
+                      <div class="container-fluid bg-3 text-center">    
+                          <div class="row">
+                              <div class="col-sm-2"> 
+                                  <p>Doppelganger</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Giant Days 2017 Special</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+
+                              <div class="col-sm-2">
+                                  <p>Imaginary Fiends</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img8.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                   <p>James Bond Solstice</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2"> 
+                                  <p>Maxwell's Demons</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img10.jpeg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+                      <br>
+                      
+                      <div class="container-fluid bg-3 text-center">    
+                          <div class="row">
+                              <div class="col-sm-2"> 
+                                  <p>Tomb Raider Survivor's Crusade</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Villain</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                              
+                              <div class="col-sm-2">
+                                  <p>Void Trip</p>
+                                  <img src="@routes.Assets.versioned("images/rel.week3img14.png")" class="img-responsive" style="width:100%" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <br>
+                      <br>
+                                  
+                  </div>
+              </div>
+                </div>
+                
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                      Release For 10th November 2017</a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Batman Who Laughs</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img1.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                  <div class="col-sm-2"> 
+                    <p>Brilliant Trash</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Dark Fang</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Evolution</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Fences</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img5.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br><br>
+
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+
+                  <div class="col-sm-2"> 
+                    <p>Jenny Finn</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Minky Woodcock Girl Who Handcuffed Houdini</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Ninja-k</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img8.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                   <div class="col-sm-2">
+                    <p>Not Brand Echh</p><br>
+                    <img src="@routes.Assets.versioned("images/rel.week2img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Priceless Raven The Pirate Princess Year Two Love and Revenge</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img10.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  </div>
+              </div><br><br>
+
+                      <div class="container-fluid bg-3 text-center">  
+                <div class="row">  
+                  <div class="col-sm-2"> 
+                    <p>Rasputin The Voice of the Dragon</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Rock & Roll Biographies Opeth-k</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>The Willows</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img13.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>WWE Survivors Series 2017 Special</p>
+                    <img src="@routes.Assets.versioned("images/rel.week2img14.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br><br>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                      Releases For 3rd  November 2017</a>
+                    </h4>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                    <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>1985 Black Hole Repo</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img1.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Batman Lost</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img2.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Coyetes</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img3.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Deuce of Hearts</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img4.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Fallen Suns</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img5.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+
+              <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Harbinger Renegade</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img6.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Harcourt Legacy</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img7.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Iron Maiden Legacy of the Beast</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img8.jpeg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Kong On The Planet of the Apes</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img9.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Master of Kung Fu</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img10.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+
+              <br>
+                <div class="container-fluid bg-3 text-center">  
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Moon Knight</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img11.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Port of Earth</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img12.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2"> 
+                    <p>Rivers of London Cry Fox</p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img13.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Skylanders Spyro And Friends Quarterly </p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img14.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Wonderful World Of Tank Girl </p>
+                    <img src="@routes.Assets.versioned("images/rel.week1img15.jpg")" class="img-responsive" style="width:100%" alt="Image">
+                  </div>
+                </div>
+              </div><br>
+                    
+                    
+                    </div>
+                  </div>
+          </div>
+      </div>
+
+
+</body>
+
+</html>

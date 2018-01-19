@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/ImagesWorking/1st Draft/comicswebpage/app/views/events.scala.html:13:40: value at is not a member of controllers.ReverseAssets[0m
+[0m[[0m[31merror[0m] [0m[0m	background-image: url('@routes.Assets.at("images/comicbookbg.jpg")');[0m
+[0m[[0m[31merror[0m] [0m[0m	                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

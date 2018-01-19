@@ -1,0 +1,15 @@
+run
+exit
+run
+exit
+run
+compile
+clean
+run
+compile
+clean
+run
+exit
+run
+exit
+run
